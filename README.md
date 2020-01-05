@@ -11,9 +11,72 @@ I create this to aid my experimental projects where the unidirectional flow is d
 4. Must be consumable by browser modules (using unpkg.com)
 5. Must be consumable by webpack
 
-## Usage
-Coming soon after publication
+## Installation
+### npm
+```bash
+# npm
+npm i --save state-store-lite
 
-## inspirations
+# yarn
+yarn add state-store-lite
+```
+### browser (modules)
+```html
+<!-- latest version -->
+<script type="module">
+  import * as stateStoreLite from 'https://unpkg.com/state-store-lite/es/statestorelit.mjs?module'
+</script>
+
+<!-- specific version -->
+<script type="module">
+  import * as stateStoreLite from 'https://unpkg.com/state-store-lite@1.0.2/es/statestorelit.mjs?module'
+</script>
+
+```
+### browser global imports
+```html
+<!-- latest version -->
+<script type="text/javascript" src="https://unpkg.com/state-store-lite"></script>
+<!-- specific version -->
+<script type="text/javascript" src="https://unpkg.com/state-store-lite"></script>
+```
+## Basic Usage Example
+```js
+import { createStore } from 'https://unpkg.com/state-store-lite@1.0.2/es/statestorelit.mjs?module'
+
+const defaultState = {
+	value: 0
+}
+
+const calculator = createStore({
+	add(state, payload) {
+  	return {
+    	...state,
+      value: state.value + payload,
+    }
+  },
+  subtract(state, payload) {
+  	return {
+    	...state,
+      value: state.value - payload,
+    }
+  }
+}, defaultState)
+
+calculator.actions.add(15)
+console.log(calculator.getState().value)
+
+calculator.actions.add(3)
+console.log(calculator.getState().value)
+
+calculator.actions.subtract(15)
+console.log(calculator.getState().value)
+
+store.subscribe(() => {
+  console.log('Subcription', calculator.getState().value)
+})
+```
+
+## Inspirations
 1. [Redux](https://github.com/reduxjs/redux)
 2. [Redux Actions](https://github.com/redux-utilities/redux-actions)
