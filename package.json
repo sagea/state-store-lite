@@ -10,6 +10,8 @@
     "test": "jest"
   },
   "author": "Alexander Sage <sagezander@gmail.com>",
+  "repository": "github.com:sagea/state-store-lite",
+  "bugs": "https://github.com/sagea/state-store-lite/issues",
   "license": "MIT",
   "keywords": [
     "simple state store",
