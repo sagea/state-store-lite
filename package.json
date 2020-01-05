@@ -10,7 +10,7 @@
     "clean": "rimraf lib dist es coverage types",
     "test": "jest",
     "build": "rollup -c",
-    "prepare": "npm run clean; npm run build && npm test"
+    "prepare": "npm run clean; npm run build; npm test"
   },
   "author": "Alexander Sage <sagezander@gmail.com>",
   "repository": "github.com:sagea/state-store-lite",
