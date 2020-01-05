@@ -27,6 +27,13 @@
     "javascript",
     "typescript"
   ],
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src",
+    "types"
+  ],
   "dependencies": {
     "@babel/runtime": "7.7.7"
   },
