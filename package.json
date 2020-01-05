@@ -1,0 +1,51 @@
+{
+  "name": "state-store-lite",
+  "version": "1.0.0",
+  "description": "A lightweight state management system based on redux with a focus towards local state and single purpose actions",
+  "main": "lib/statestorelit.js",
+  "unpkg": "dist/statestorelit.js",
+  "module": "es/statestorelit.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Alexander Sage <sagezander@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "simple state store",
+    "simplestatestore",
+    "store",
+    "predictable",
+    "functional",
+    "immutable",
+    "state",
+    "javascript",
+    "typescript"
+  ],
+  "dependencies": {
+    "@babel/runtime": "7.7.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "7.7.4",
+    "@babel/plugin-transform-runtime": "7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.7.7",
+    "@types/jest": "^24.0.25",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.28.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.3",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.4"
+  }
+}
