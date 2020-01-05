@@ -3,7 +3,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
     '!**/__tests__/**',
-    '!**/__mocks__/**',
+    '!**/__mocks__/**'
   ],
   resetMocks: true,
   resetModules: true,
@@ -11,4 +11,7 @@ module.exports = {
   transform: {
     '^.+\\.[t|j]sx?$': 'babel-jest',
   },
+  roots: [
+    '<rootDir>/src'
+  ]
 }
