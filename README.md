@@ -14,6 +14,6 @@ I create this to aid my experimental projects where the unidirectional flow is d
 ## Usage
 Coming soon after publication
 
-## Insperations
+## inspirations
 1. [Redux](https://github.com/reduxjs/redux)
 2. [Redux Actions](https://github.com/redux-utilities/redux-actions)
