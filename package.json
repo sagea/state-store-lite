@@ -1,6 +1,6 @@
 {
   "name": "state-store-lite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight state management system based on redux with a focus towards local state and single purpose actions",
   "main": "lib/statestorelit.js",
   "unpkg": "dist/statestorelit.js",
