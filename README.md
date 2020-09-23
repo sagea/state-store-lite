@@ -72,7 +72,7 @@ console.log(calculator.getState().value)
 calculator.actions.subtract(15)
 console.log(calculator.getState().value)
 
-store.subscribe(() => {
+calculator.subscribe(() => {
   console.log('Subcription', calculator.getState().value)
 })
 ```
